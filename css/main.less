@@ -53,7 +53,6 @@ nav {
 
 		+.main-container {
 			margin-left: 80%;
-			overflow: hidden;
 		}
 	}
 
@@ -72,7 +71,7 @@ nav {
 		li {
 			border-bottom: 1px solid @grey;
 			cursor: pointer;
-			padding: 10px;
+			padding: 10px 40px 10px 10px;
 			position: relative;
 
 			a {
@@ -170,7 +169,11 @@ nav {
 		overflow: visible;
 		position: relative;
 		width: 100%;
+		z-index: 15;
+
 		ul {
+			background: @blueDark;
+			height: 43px;
 			margin: 0;
 			padding: 0;
 			position: relative;
@@ -178,20 +181,65 @@ nav {
 			li {
 				border: none;
 				display: inline-block;
-				padding: 10px 15px;
+				padding: 0;
+				position: static;
 
 				a {
-					color: @black;
+					border-right: 1px solid lighten(@blueDark, 10%);
+					color: @white;
+					display: inline-block;
+					padding: 10px 15px;
+
+					&:hover {
+						background: lighten(@blueDark, 10%);
+					}
 				}
 				.subnav-btn {
-					color: @black;
+					border-right: 1px solid lighten(@blueDark, 10%);
 					font-size: 100%;
+					left: 0;
+					line-height: 43px;
+					position: relative;
 					right: auto;
-					right: -10px;
+					top: 0;
+					transform: none;
+					-moz-transform: none;
+					-webkit-transform: none;
+
+					&:hover {
+						background: lighten(@blueDark, 10%);
+					}
+
+					[class^="icon-"]:before {
+						content: '\e811';
+					}
+				}
+				&.back {
+					left: 0;
+					padding: 0;
+					position: static;
+					top: 0;
+					width: auto;
 				}
 				ul {
 					display: none;
+					&.left {
+						left: 0;
+					}
 				}
+			}
+			&.open {
+				display: block;
+				position: absolute;
+				top: 100%;
+				width: 100%;
+
+				.open {
+					top: 0;
+				}
+			}
+			&.left {
+				left: 0;
 			}
 		}
 	}

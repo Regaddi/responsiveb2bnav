@@ -48,7 +48,6 @@ nav.active {
 }
 nav.active + .main-container {
   margin-left: 80%;
-  overflow: hidden;
 }
 nav ul {
   left: 0;
@@ -64,7 +63,7 @@ nav ul.left {
 nav ul li {
   border-bottom: 1px solid #999999;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 40px 10px 10px;
   position: relative;
 }
 nav ul li a {
@@ -158,8 +157,11 @@ nav ul li ul.left {
     overflow: visible;
     position: relative;
     width: 100%;
+    z-index: 15;
   }
   nav ul {
+    background: #395875;
+    height: 43px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -167,19 +169,60 @@ nav ul li ul.left {
   nav ul li {
     border: none;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 0;
+    position: static;
   }
   nav ul li a {
-    color: #000000;
+    border-right: 1px solid #4a7297;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 15px;
+  }
+  nav ul li a:hover {
+    background: #4a7297;
   }
   nav ul li .subnav-btn {
-    color: #000000;
+    border-right: 1px solid #4a7297;
     font-size: 100%;
+    left: 0;
+    line-height: 43px;
+    position: relative;
     right: auto;
-    right: -10px;
+    top: 0;
+    transform: none;
+    -moz-transform: none;
+    -webkit-transform: none;
+  }
+  nav ul li .subnav-btn:hover {
+    background: #4a7297;
+  }
+  nav ul li .subnav-btn [class^="icon-"]:before {
+    content: '\e811';
+  }
+  nav ul li.back {
+    left: 0;
+    padding: 0;
+    position: static;
+    top: 0;
+    width: auto;
   }
   nav ul li ul {
     display: none;
+  }
+  nav ul li ul.left {
+    left: 0;
+  }
+  nav ul.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+  nav ul.open .open {
+    top: 0;
+  }
+  nav ul.left {
+    left: 0;
   }
   .nav-toggle {
     display: none;
