@@ -71,17 +71,23 @@ nav {
 		li {
 			border-bottom: 1px solid @grey;
 			cursor: pointer;
-			padding: 10px 40px 10px 10px;
 			position: relative;
 
 			a {
 				color: @white;
+				display: block;
+				padding: 10px 40px 10px 10px;
+				&:active {
+					background: @blueDark;
+				}
 			}
 			.subnav-btn {
 				background: 0;
 				border: 0;
 				color: @white;
+				display: inline-block;
 				font-size: 140%;
+				height: 43px;
 				margin: 0;
 				padding: 0;
 				position: absolute;
@@ -91,16 +97,15 @@ nav {
 				-moz-transform: translate(0, -50%);
 				-webkit-transform: translate(0, -50%);
 			}
-			&:active {
-				background: @blueDark;
-			}
 			&.back {
 				left: 100%;
-				padding-left: 40px;
 				position: absolute;
 				top: 0;
 				width: 100%;
 
+				> a {
+					padding-left: 40px;
+				}
 				>.subnav-btn {
 					left: 0;
 					right: auto;

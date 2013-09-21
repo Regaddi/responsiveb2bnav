@@ -63,17 +63,23 @@ nav ul.left {
 nav ul li {
   border-bottom: 1px solid #999999;
   cursor: pointer;
-  padding: 10px 40px 10px 10px;
   position: relative;
 }
 nav ul li a {
   color: #ffffff;
+  display: block;
+  padding: 10px 40px 10px 10px;
+}
+nav ul li a:active {
+  background: #395875;
 }
 nav ul li .subnav-btn {
   background: 0;
   border: 0;
   color: #ffffff;
+  display: inline-block;
   font-size: 140%;
+  height: 43px;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -83,15 +89,14 @@ nav ul li .subnav-btn {
   -moz-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
 }
-nav ul li:active {
-  background: #395875;
-}
 nav ul li.back {
   left: 100%;
-  padding-left: 40px;
   position: absolute;
   top: 0;
   width: 100%;
+}
+nav ul li.back > a {
+  padding-left: 40px;
 }
 nav ul li.back > .subnav-btn {
   left: 0;
