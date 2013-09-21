@@ -64,6 +64,7 @@ nav ul li {
   border-bottom: 1px solid #999999;
   cursor: pointer;
   position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 nav ul li a {
   color: #ffffff;
