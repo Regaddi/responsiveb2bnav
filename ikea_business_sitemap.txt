@@ -1,0 +1,251 @@
+<ul>
+	<li>
+		<a>Büroeinrichtungen</a>
+		<ul>
+			<li>
+				<a>Schreibtische & Arbeitsplätze</a>
+				<ul>
+					<li><a>mobile Lösungen</a></li>
+					<li><a>PC-Schreibtische</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Drehstühle</a>
+				<ul>
+					<li><a>Besucherstühle</a></li>
+					<li><a>Bürostühle</a></li>
+				</ul>
+			</li>
+			<li><a>Aktenschränke</a></li>
+			<li><a>Schubladenelemente</a></li>
+			<li>
+				<a>Aufbewahrung Papiere & Medien</a>
+				<ul>
+					<li><a>Kästen für Papiere & Medien</a></li>
+					<li><a>Multimedia-Zubehör</a></li>
+					<li><a>Pinnwände</a></li>
+					<li><a>Schreibtischzubehör</a></li>
+					<li><a>Zeitschriftensammler</a></li>
+					<li><a>Zeitungsständer</a></li>
+				</ul>
+			</li>
+			<li><a>Kabel ordnen; Zubehör</a></li>
+			<li><a>Arbeitsleuchten</a></li>
+			<li>
+				<a>Spots</a>
+				<ul>
+					<li><a>Deckenspots</a></li>
+					<li><a>Wandspots</a></li>
+					<li><a>Schienensysteme</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Tischplatten & Beine</a>
+				<ul>
+					<li><a>"Tischbar"</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Regale</a>
+				<ul>
+					<li><a>BESTÅ/FRAMSTÅ/INREDA System</a></li>
+					<li><a>BILLY System</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Esstische</a>
+				<ul>
+					<li><a>Ausziehtische</a></li>
+					<li><a>bis 10 Personen</a></li>
+					<li><a>bis 4 Personen</a></li>
+					<li><a>bis 6 Personen</a></li>
+					<li><a>Tische zur Wandmontage</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Ledermöbel</a>
+				<ul>
+					<li><a>2er-Sofas, Leder</a></li>
+					<li><a>3er-Sofas</a></li>
+					<li><a>Ecksofas</a></li>
+					<li><a>Hocker, Leder</a></li>
+					<li><a>Récamieren, Leder</a></li>
+					<li><a>Sessel, Leder</a></li>
+					<li><a>Sitzelemente, Leder</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Couch- & Beistelltische</a>
+				<ul>
+					<li><a>Ablagetische</a></li>
+					<li><a>Beistelltische</a></li>
+					<li><a>Couchtische</a></li>
+				</ul>
+			</li>
+			<li><a>Kleideraufbewahrungssysteme</a></li>
+			<li><a>Kaffee & Tee</a></li>
+			<li><a>Hängeleuchten</a></li>
+		</ul>
+	</li>
+	<li>
+		<a>Ladeneinrichtung</a>
+		<ul>
+			<li><a>Kleideraufbewahrungssysteme</a></li>
+			<li>
+				<a>Schränke & Anrichten</a>
+				<ul>
+					<li><a>Ablagetische</a></li>
+					<li><a>Anrichten</a></li>
+					<li><a>Schränke</a></li>
+					<li><a>Vitrinen</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Aufbewahrungssystem</a>
+				<ul>
+					<li><a>GORM System</a></li>
+					<li><a>OMAR System</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Kleiderschränke</a>
+				<ul>
+					<li><a>Pax System</a></li>
+					<li><a>STOLMEN System</a></li>
+				</ul>
+			</li>
+			<li><a>Kleiderständer</a></li>
+			<li>
+				<a>Haken & Aufhänger</a>
+				<ul>
+					<li><a>Haken</a></li>
+					<li><a>Kleiderbügel</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Spots</a>
+				<ul>
+					<li><a>Deckenspots</a></li>
+					<li><a>Wandspots</a></li>
+					<li><a>Schienensysteme</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Hängeleuchten</a>
+				<ul>
+					<li><a>Deckenleuchten</a></li>
+					<li><a>Deckenspots</a></li>
+					<li><a>Hängeleuchten</a></li>
+				</ul>
+			</li>
+			<li><a>Vorratsraum</a></li>
+			<li>
+				<a>Kästen & Körbe</a>
+				<ul>
+					<li><a>Behälter für Nebenräume</a></li>
+					<li><a>Kleiderkästen</a></li>
+					<li><a>Kästen für Papiere & Medien</a></li>
+					<li><a>Körbe</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Schreibtische & Arbeitsplätze</a>
+				<ul>
+					<li><a>mobile Lösungen</a></li>
+					<li><a>PC-Schreibtische</a></li>
+				</ul>
+			</li>
+			<li><a>Hocker</a></li>
+			<li><a>Tischplatten & -beine</a></li>
+			<li><a>Arbeitsleuchten</a></li>
+		</ul>
+	</li>
+	<li>
+		<a>Gastronomiebedarf & Hotelbedarf</a>
+		<ul>
+			<li>
+				<a>Esstische</a>
+				<ul>
+					<li><a>Ausziehtische</a></li>
+					<li><a>bis 10 Personen</a></li>
+					<li><a>bis 4 Personen</a></li>
+					<li><a>bis 6 Personen</a></li>
+					<li><a>Tische zur Wandmontage</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Schränke & Anrichten</a>
+				<ul>
+					<li><a>Ablagetische</a></li>
+					<li><a>Anrichten</a></li>
+					<li><a>Schränke</a></li>
+					<li><a>Vitrinen</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Gläser, Karaffen & Kannen</a>
+				<ul>
+					<li><a>Getränkezubehör</a></li>
+					<li><a>Glas</a></li>
+					<li><a>Glas, spezial</a></li>
+					<li><a>Kannen & Karaffen</a></li>
+					<li><a>Weingläser</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Teller & Schüsseln</a>
+				<ul>
+					<li><a>Dessertteller</a></li>
+					<li><a>Schüsseln</a></li>
+					<li><a>Teller</a></li>
+					<li><a>tiefe Teller</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Besteck</a>
+				<ul>
+					<li><a>Besteck</a></li>
+					<li><a>Vorlegebesteck</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Servierschüsseln, -platten & Tabletts</a>
+				<ul>
+					<li><a>Schüsseln</a></li>
+					<li><a>Servierplatten</a></li>
+					<li><a>Tabletts</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Servietten</a>
+				<ul>
+					<li><a>Servietten</a></li>
+					<li><a>Serviettenringe</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Kaffee & Tee</a>
+				<ul>
+					<li><a>Becher & Tassen</a></li>
+					<li><a>Isoliergefäße</a></li>
+					<li><a>Kaffeezubereiter & -zubehör</a></li>
+					<li><a>Teekannen & -zubehör</a></li>
+				</ul>
+			</li>
+			<li>
+				<a>Wandleuchten</a>
+				<ul>
+					<li><a>Wandleuchten</a></li>
+					<li><a>Wandspots</a></li>
+				</ul>
+			</li>
+			<li><a>Standleuchten</a></li>
+			<li><a>Tischleuchten</a></li>
+			<li><a>Spots</a></li>
+			<li><a>Doppelbetten</a></li>
+			<li><a>Ledermöbel</a></li>
+			<li><a>Sessel</a></li>
+			<li><a>Couch- & Beistelltische</a></li>
+		</ul>
+	</li>
+</ul>

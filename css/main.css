@@ -6,18 +6,22 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.has-left-transition {
+.left-transition,
+nav ul,
+nav ul.left,
+.main-container {
   -webkit-transition: margin 300ms ease-in-out, left 300ms ease-in-out;
   -moz-transition: margin 300ms ease-in-out, left 300ms ease-in-out;
   -ms-transition: margin 300ms ease-in-out, left 300ms ease-in-out;
   -o-transition: margin 300ms ease-in-out, left 300ms ease-in-out;
   transition: margin 300ms ease-in-out, left 300ms ease-in-out;
 }
-html, body {
+html,
+body {
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-#viewport {
+body {
   height: 100%;
   max-height: 100%;
   min-height: 100%;
@@ -27,15 +31,38 @@ html, body {
 header {
   background: #628cb2;
   border-bottom: #395875;
-  box-shadow: 0 0 4px #000000;
-  -moz-box-shadow: 0 0 4px #000000;
-  -webkit-box-shadow: 0 0 4px #000000;
+  box-shadow: 0 0 0.25rem #000000;
+  -moz-box-shadow: 0 0 0.25rem #000000;
+  -webkit-box-shadow: 0 0 0.25rem #000000;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+header .nav-toggle {
+  border: none;
+  float: left;
+  font-size: 1.5rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  padding: 0;
+  width: 2.25rem;
+  z-index: 30;
+}
+header .pagetitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: lighter;
+  line-height: 2.25rem;
+  margin: 0;
+  padding: 0 3rem;
+  text-align: center;
+  text-shadow: 0 0 4px #000000;
+  z-index: 25;
 }
 nav {
   background: rgba(0, 0, 0, 0.9);
   font-size: 120%;
   height: 100%;
-  min-height: 100%;
   overflow-y: auto;
   position: absolute;
   width: 80%;
@@ -62,24 +89,26 @@ nav ul.left {
 nav ul li {
   border-bottom: 1px solid #999999;
   cursor: pointer;
+  min-height: 2.25rem;
   position: relative;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 nav ul li a {
   color: #ffffff;
   display: block;
-  padding: 10px 40px 10px 10px;
+  padding: 0.5rem 2.25rem 0.5rem 0.5rem;
+  word-break: break-all;
 }
 nav ul li a:active {
   background: #395875;
 }
 nav ul li .subnav-btn {
-  background: 0;
+  background: none;
   border: 0;
   color: #ffffff;
   display: inline-block;
   font-size: 140%;
-  height: 43px;
+  height: 2.25rem;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -96,7 +125,8 @@ nav ul li.back {
   width: 100%;
 }
 nav ul li.back > a {
-  padding-left: 40px;
+  padding-left: 2.25rem;
+  padding-right: 0.5rem;
 }
 nav ul li.back > .subnav-btn {
   left: 0;
@@ -122,28 +152,24 @@ nav ul li ul.open {
 nav ul li ul.left {
   left: -100%;
 }
-.nav-toggle {
-  font-size: 28px;
-  height: 44px;
-  line-height: 42px;
-  padding: 0;
-  width: 44px;
-}
 .main-container {
-  box-shadow: 0 0 4px #000000;
-  -moz-box-shadow: 0 0 4px #000000;
-  -webkit-box-shadow: 0 0 4px #000000;
+  box-shadow: 0 0 0.25rem #000000;
+  -moz-box-shadow: 0 0 0.25rem #000000;
+  -webkit-box-shadow: 0 0 0.25rem #000000;
   background-color: #ffffff;
-  min-height: 100%;
-  max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
+  overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 10;
 }
-.content {
-  padding: 10px;
+.main-container .content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }
 /* Desktops and laptops ----------- */
 @media screen and (min-width: 920px) {
@@ -167,7 +193,7 @@ nav ul li ul.left {
   }
   nav ul {
     background: #395875;
-    height: 43px;
+    height: 2.25rem;
     margin: 0;
     padding: 0;
     position: relative;

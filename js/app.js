@@ -6,13 +6,13 @@ function initNav() {
 	$('.main-container').hammer({
 		swipe_velocity: 0.1
 	}).on('swiperight', function(event) {
-		if(!$nav.is('.active')) {
+		if(Modernizr.touch && !$nav.is('.active')) {
 			event.gesture.preventDefault();
 			$nav.addClass('active');
 		}
 	})
 	.on('swipeleft', function(event) {
-		if($nav.is('.active')) {
+		if(Modernizr.touch && $nav.is('.active')) {
 			event.gesture.preventDefault();
 			$nav.removeClass('active');
 		}
@@ -31,6 +31,4 @@ function initNav() {
 
 $(function() {
 	initNav();
-
-	fixie.init(["nav ul li a"]);
 });

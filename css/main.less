@@ -9,7 +9,7 @@
 	box-sizing: border-box;
 }
 
-.has-left-transition {
+.left-transition {
 	-webkit-transition: margin 300ms ease-in-out, left 300ms ease-in-out;
 	-moz-transition: margin 300ms ease-in-out, left 300ms ease-in-out;
 	-ms-transition: margin 300ms ease-in-out, left 300ms ease-in-out;
@@ -19,10 +19,10 @@
 
 html,body {
 	height: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
-#viewport {
+body {
 	height: 100%;
 	max-height: 100%;
 	min-height: 100%;
@@ -33,15 +33,38 @@ html,body {
 header {
 	background: @blue;
 	border-bottom: @blueDark;
-	.box-shadow(0, 0, 4px, @black);
+	.box-shadow(0, 0, 0.25rem, @black);
+	position: absolute;
+	width: 100%;
+	z-index: 20;
+
+	.nav-toggle {
+		border: none;
+		float: left;
+		font-size: 1.5rem;
+		height: 2.25rem;
+		line-height: 2.25rem;
+		padding: 0;
+		width: 2.25rem;
+		z-index: 30;
+	}
+	.pagetitle {
+		color: @white;
+		font-size: 1.25rem;
+		font-weight: lighter;
+		line-height: 2.25rem;
+		margin: 0;
+		padding: 0 3rem;
+		text-align: center;
+		text-shadow: 0 0 4px @black;
+		z-index: 25;
+	}
 }
 
 nav {
 	background: rgba(0,0,0,0.9);
 	font-size: 120%;
-	height: 100%;
-	// margin-left: -80%;
-	min-height: 100%;
+	height: 100%;	
 	overflow-y: auto;
 	position: absolute;
 	width: 80%;
@@ -56,7 +79,7 @@ nav {
 		}
 	}
 
-	ul {
+	ul:extend(.left-transition) {
 		left: 0;
 		margin: 0;
 		padding: 0;
@@ -71,32 +94,33 @@ nav {
 		li {
 			border-bottom: 1px solid @grey;
 			cursor: pointer;
+			min-height: 2.25rem;
 			position: relative;
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
 
 			a {
 				color: @white;
 				display: block;
-				padding: 10px 40px 10px 10px;
+				padding: 0.5rem 2.25rem 0.5rem 0.5rem;
+				word-break: break-all;
+
 				&:active {
 					background: @blueDark;
 				}
 			}
 			.subnav-btn {
-				background: 0;
+				background: none;
 				border: 0;
 				color: @white;
 				display: inline-block;
 				font-size: 140%;
-				height: 43px;
+				height: 2.25rem;
 				margin: 0;
 				padding: 0;
 				position: absolute;
 				right: 0;
 				top: 50%;
-				transform: translate(0, -50%);
-				-moz-transform: translate(0, -50%);
-				-webkit-transform: translate(0, -50%);
+				.translate(0, -50%);
 			}
 			&.back {
 				left: 100%;
@@ -105,7 +129,8 @@ nav {
 				width: 100%;
 
 				> a {
-					padding-left: 40px;
+					padding-left: 2.25rem;
+					padding-right: 0.5rem;
 				}
 				>.subnav-btn {
 					left: 0;
@@ -136,29 +161,25 @@ nav {
 	}
 }
 
-.nav-toggle {
-	font-size: 28px;
-	height: 44px;
-	line-height: 42px;
-	padding: 0;
-	width: 44px;
-}
-
-.main-container {
-	.box-shadow(0, 0, 4px, @black);
+.main-container:extend(.left-transition) {
+	.box-shadow(0, 0, .25rem, @black);
 	background-color: @white;
-	min-height: 100%;
-	max-height: 100%;
-	overflow-x: hidden;
-	overflow-y: auto;
+	height: 100%;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 	z-index: 10;
+
+	.content {
+		height: 100%;
+		overflow-y: auto;
+		padding: 2rem 1rem;
+		position: absolute;
+		top: 0;
+		z-index: 10;
+	}
 }
 
-.content {
-	padding: 10px;
-}
 
 /* Desktops and laptops ----------- */
 @media screen and (min-width: 920px) {
@@ -180,7 +201,7 @@ nav {
 
 		ul {
 			background: @blueDark;
-			height: 43px;
+			height: 2.25rem;
 			margin: 0;
 			padding: 0;
 			position: relative;
